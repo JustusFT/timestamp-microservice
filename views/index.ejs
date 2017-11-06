@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Timestamp Microservice</title>
+  <style>
+    body {
+      font-size: 16px;
+      font-family: "Helvetica", sans-serif;
+      line-height: 1.5;
+      color: #444;
+      background-color: #FAFAFA;
+      text-align: center;
+    }
+    article {
+      display: inline-block;
+      text-align: initial;
+    }
+    h1 { font-size: 2em; }
+    h3 { font-size: 1.17em; }
+  </style>
+</head>
+<body>
+  <article>
+    <h1>Timestamp Microservice</h1>
+    <p>An API to convert between unix timestamp and natural language dates.</p>
+    <h3>Example usage:</h3>
+    <code>
+      <%= siteUrl %>/December%2015,%202015
+    </code>
+    <br />
+    <code>
+      <%= siteUrl %>/1450137600
+    </code>
+    <h3>Example output:</h3>
+    <code>
+      { "unix": 1450137600, "natural": "December 15, 2015" }
+    </code>
+  </article>
+</body>
+</html>
