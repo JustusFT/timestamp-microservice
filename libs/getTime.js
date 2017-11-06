@@ -7,7 +7,7 @@ module.exports = (str) => {
   let validTime;
 
   if (unixTime.isValid()) { validTime = unixTime; }
-  if (naturalTime.isValid()) { validTime = naturalTime; }
+  else if (naturalTime.isValid()) { validTime = naturalTime; }
 
   if (validTime) {
     return {
